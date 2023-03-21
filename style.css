@@ -88,6 +88,11 @@ a {
 	text-decoration: none;
 	color: #9d84ff;
 }
+
+a:hover {
+	text-decoration: none;
+	color: #aa9fda;
+}
 .imageCaption {
 	float: right;
 	margin: 0 0 10px 25px;
@@ -112,6 +117,7 @@ nav {
 	background-color: #9d84ff;
 	padding-top: 12px;
 	padding-bottom: 12px;
+	margin-bottom: 20px;
 }
 #textColor, section {
 	color: #4ecdc4;
@@ -159,13 +165,15 @@ nav {
 	background-color: #9d84ff;
 	color: #00ffee;
 	cursor: pointer;
-	width: 100%;
+	width: 60%;
 	border: none;
 	text-align: center;
 	outline: none;
 	font-size: 22px;
 	padding: 6px 6px;
 	margin-top: 8px;
+	margin-left: 20%;
+	margin-right: 20%;
   }
 
   strong {
@@ -188,6 +196,8 @@ nav {
 
   section {
 	margin-bottom: 32px;
+	margin-left: 5%;
+	margin-right: 5%;
   }
 @media screen and (max-width: 600px) {
 
