@@ -22,6 +22,10 @@ body, h1, p, pre, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 }
+
+pre {
+	max-width: 80%;
+}
 img {
 	max-width: 100%;
 	margin: 12px 4px 16px 0;
