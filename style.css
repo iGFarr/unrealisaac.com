@@ -191,11 +191,13 @@ nav {
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
-	padding: 6px 6px;
+	padding: 0;
 	margin-top: 4px;
-	display: none;
+	max-height: 0;
 	overflow: hidden;
+	display: block;
 	background-color: #acb6ffe7;
+	transition: max-height 0.15s ease-in-out;
   }
 
   section {

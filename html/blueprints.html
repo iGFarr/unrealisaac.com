@@ -81,21 +81,23 @@
 	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
 	<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-		
-		for (i = 0; i < coll.length; i++) {
-		  coll[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var content = this.nextElementSibling;
-			if (content.style.display === "block") {
-			  content.style.display = "none";
-			} else {
-			  content.style.display = "block";
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight) {
+						content.style.maxHeight = null;
+						content.style.padding = "0";
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+						content.style.padding = "6px 6px";
+					}
+				});
 			}
-		  });
-		}
-		</script>
+	</script>
 </body>
 <footer>
 	<p style="padding: 10px 12px; text-align: center; margin-top: -8px;">Boilerplate code from <a
